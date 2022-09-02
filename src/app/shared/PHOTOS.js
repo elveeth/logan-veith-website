@@ -1,13 +1,13 @@
-import reactLakeImg from '../assets/img/react-lake.jpg';
-import chromeRiverImg from '../assets/img/chrome-river.jpg';
-import breadCrumbImg from '../assets/img/breadcrumb-trail.jpg';
-import reduxWoodsImg from '../assets/img/redux-woods.jpg';
+import aboutImg from '../assets/img/about-img.jpg';
+import alienLoungeImg from '../assets/img/alien-lounge.jpg';
+import flyingBirdImg from '../assets/img/flying-bird.png';
+import paintSmilesImg from '../assets/img/paint-smiles.jpg';
 
-export const CAMPSITES = [
+export const PHOTOS = [
     {
         id: 0,
-        name: 'React Lake Campground',
-        image: reactLakeImg,
+        name: 'Resume',
+        image: aboutImg,
         elevation: 1233,
         featured: false,
         description:
@@ -15,8 +15,8 @@ export const CAMPSITES = [
     },
     {
         id: 1,
-        name: 'Chrome River Campground ',
-        image: chromeRiverImg,
+        name: 'My Work',
+        image: alienLoungeImg,
         elevation: 877,
         featured: false,
         description:
@@ -24,8 +24,8 @@ export const CAMPSITES = [
     },
     {
         id: 2,
-        name: 'Breadcrumb Trail Campground',
-        image: breadCrumbImg,
+        name: 'My Art',
+        image: flyingBirdImg,
         elevation: 2901,
         featured: false,
         description:
@@ -33,8 +33,8 @@ export const CAMPSITES = [
     },
     {
         id: 3,
-        name: 'Redux Woods Campground',
-        image: reduxWoodsImg,
+        name: 'My Code',
+        image: paintSmilesImg,
         elevation: 42,
         featured: true,
         description:

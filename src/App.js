@@ -1,11 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import PhotosList from './features/photos/PhotosList.js';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      hello world!
+    <div className='App'>
+    <Header />
+      <PhotosList />
+    <Footer />
     </div>
   );
 }
