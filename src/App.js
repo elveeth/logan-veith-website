@@ -1,13 +1,13 @@
 import './App.css';
 import Header from './components/Header';
-import PhotosList from './features/photos/PhotosList.js';
+import PhotosDirectoryPage from './pages/PhotosDirectoryPage.js';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div className='App'>
     <Header />
-      <PhotosList />
+      <PhotosDirectoryPage />
     <Footer />
     </div>
   );

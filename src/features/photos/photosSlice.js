@@ -4,6 +4,10 @@ export const selectAllPhotos = () => {
     return PHOTOS
 };
 
-export const selectRandomPhoto = () => {
-    return PHOTOS[Math.floor(PHOTOS.length * Math.random())]
+export const selectPhotoById = (id) => {
+    return PHOTOS.find((photo) => photo.id === id)
 };
+
+// export const selectRandomPhoto = () => {
+//     return PHOTOS[Math.floor(PHOTOS.length * Math.random())]
+// };
