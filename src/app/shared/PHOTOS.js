@@ -1,17 +1,17 @@
-import aboutImg from '../assets/img/about-img.jpg';
-import alienLoungeImg from '../assets/img/alien-lounge.jpg';
-import flyingBirdImg from '../assets/img/flying-bird.png';
-import paintSmilesImg from '../assets/img/paint-smiles.jpg';
+import aboutImg from '../assets/img/aboutme-tile.jpg';
+import alienLoungeImg from '../assets/img/mywork-tile.jpg';
+import flyingBirdImg from '../assets/img/myart-tile.jpg';
+import paintSmilesImg from '../assets/img/mycode-tile.jpg';
 
 export const PHOTOS = [
     {
         id: 0,
-        name: 'Resume',
+        name: 'About Me',
         image: aboutImg,
         elevation: 1233,
         featured: false,
         description:
-            'Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.'
+            'Software Developer, Digital Media Specialist, and Artist.'
     },
     {
         id: 1,
@@ -20,7 +20,7 @@ export const PHOTOS = [
         elevation: 877,
         featured: false,
         description:
-            'Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.'
+            'Multimedia and social media content, logos, videos, books, and websites.'
     },
     {
         id: 2,
@@ -29,7 +29,7 @@ export const PHOTOS = [
         elevation: 2901,
         featured: false,
         description:
-            'Let NuCamp be your guide to this off-the-beaten-path, hike-in-only campground.'
+            'Hand-drawn, digital, and mixed art.'
     },
     {
         id: 3,
@@ -38,6 +38,6 @@ export const PHOTOS = [
         elevation: 42,
         featured: true,
         description:
-            "You'll never want to leave this hidden gem, deep within the lush Redux Woods."
+            "Website development, applications, and programming."
     }
 ];

@@ -1,13 +1,20 @@
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import ContactPage from './pages/ContactPage';
+import HomePage from './pages/HomePage';
 import Header from './components/Header';
-import PhotosDirectoryPage from './pages/PhotosDirectoryPage.js';
 import Footer from './components/Footer';
+import PhotosDirectoryPage from './pages/PhotosDirectoryPage.js';
+import './App.css';
 
 function App() {
   return (
     <div className='App'>
     <Header />
-      <PhotosDirectoryPage />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='contact' element={<ContactPage />} />
+        <Route path='directory' element={<PhotosDirectoryPage />} />
+      </Routes>
     <Footer />
     </div>
   );
