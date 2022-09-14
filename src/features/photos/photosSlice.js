@@ -5,7 +5,7 @@ export const selectAllPhotos = () => {
 };
 
 export const selectPhotoById = (id) => {
-    return PHOTOS.find((photo) => photo.id === id)
+    return PHOTOS.find((photo) => photo.id === parseInt(id));
 };
 
 export const selectFeaturedPhoto = () => {

@@ -2,7 +2,7 @@ import PhotoCard from "./PhotoCard";
 import { Col, Row } from 'reactstrap';
 import { selectAllPhotos } from './photosSlice';
 
-const PhotosList = ({ setPhotoId }) => {
+const PhotosList = () => {
     const photos = selectAllPhotos();
 
     return (
@@ -13,8 +13,7 @@ const PhotosList = ({ setPhotoId }) => {
                         md='5'
                         className='m-4'
                         key={photo.id}
-                        onClick={() => setPhotoId(photo.id)}
-                        >
+                    >
                         <PhotoCard photo={photo} />
                     </Col>
 
