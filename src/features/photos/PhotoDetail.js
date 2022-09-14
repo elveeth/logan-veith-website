@@ -4,7 +4,7 @@ const PhotoDetail = ({ photo }) => {
     const { image, name, description } = photo;
 
     return (
-        <Col md='12' className='m-4'>
+        <Col md='5' className='m-1'>
             <Card>
                 <CardImg top src={image} alt={name} />
                 <CardBody>
