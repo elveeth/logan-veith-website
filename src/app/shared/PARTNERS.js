@@ -1,38 +1,38 @@
-import bootStrapLogo from '../assets/img/bootstrap-logo.png';
-import gitLogo from '../assets/img/git-logo.png';
-import mongoLogo from '../assets/img/mongo-logo.png';
-import nodeLogo from '../assets/img/node-logo.png';
+import ashTreeLogo from '../assets/img/ashtree.png';
+import neonAndBlueLogo from '../assets/img/neonandblue.png';
+import badHorseLogo from '../assets/img/badhorse.png';
+import oilMachineLogo from '../assets/img/oilmachine.png';
 
 export const PARTNERS = [
     {
         id: 0,
-        name: 'Bootstrap Outfitters',
-        image: bootStrapLogo,
-        featured: false,
+        name: 'Ash Tree',
+        image: ashTreeLogo,
+        featured: true,
         description:
             "Bootstrap Outfitters supplies you with the gear you need at prices you can't beat."
     },
     {
         id: 1,
-        name: 'Git Out Expeditions',
-        image: gitLogo,
+        name: 'Neon & Blue',
+        image: neonAndBlueLogo,
         featured: false,
         description:
             'Join Git Out Expeditions to explore new horizons with a group of other adventurers!'
     },
     {
         id: 2,
-        name: 'Mongo Fly Shop',
-        image: mongoLogo,
+        name: 'Bad Horse',
+        image: badHorseLogo,
         featured: false,
         description:
             'Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.'
     },
     {
         id: 3,
-        name: 'Node Outdoor Apparel',
-        image: nodeLogo,
-        featured: true,
+        name: 'Oil Machine',
+        image: oilMachineLogo,
+        featured: false,
         description:
             'From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.'
     }
