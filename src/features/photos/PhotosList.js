@@ -1,9 +1,11 @@
-import PhotoCard from "./PhotoCard";
+import { useSelector } from 'react-redux';
+import PhotoCard from './PhotoCard';
 import { Col, Row } from 'reactstrap';
 import { selectAllPhotos } from './photosSlice';
 
 const PhotosList = () => {
-    const photos = selectAllPhotos();
+    const photos = useSelector(selectAllPhotos);
+    console.log('photos:', photos)
 
     return (
         <Row className='ms-auto'>

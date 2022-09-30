@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux';
 import { Container, Row } from 'reactstrap';
 import { useParams } from 'react-router-dom';
 import { selectPhotoById } from '../features/photos/photosSlice';
@@ -7,7 +8,8 @@ import SubHeader from '../components/SubHeader';
 
 const PhotoDetailPage = () => {
     const { photoId } = useParams()
-    const photo = selectPhotoById(photoId)
+    const photo = useSelector(selectPhotoById(photoId))
+    console.log('photo:', photo)
 
     return (
         <Container>

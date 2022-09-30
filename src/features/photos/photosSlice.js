@@ -1,17 +1,25 @@
+import { createSlice } from '@reduxjs/toolkit';
 import { PHOTOS } from '../../app/shared/PHOTOS';
 
-export const selectAllPhotos = () => {
-    return PHOTOS
+const initialState = {
+    photosArray: PHOTOS
 };
 
-export const selectPhotoById = (id) => {
-    return PHOTOS.find((photo) => photo.id === parseInt(id));
+const photosSlice = createSlice({
+    name: 'photos',
+    initialState
+});
+
+export const photosReducer = photosSlice.reducer;
+
+export const selectAllPhotos = (state) => {
+    return state.photos.photosArray
 };
 
-export const selectFeaturedPhoto = () => {
-    return PHOTOS.find((photo) => photo.featured)
+export const selectPhotoById = (id) => (state) => {
+    return state.photos.photosArray.find((photo) => photo.id === parseInt(id));
 };
 
-// export const selectRandomPhoto = () => {
-//     return PHOTOS[Math.floor(PHOTOS.length * Math.random())]
-// };
+export const selectFeaturedPhoto = (state) => {
+    return state.photos.photosArray.find((photo) => photo.featured)
+};
